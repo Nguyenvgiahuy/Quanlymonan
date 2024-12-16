@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .total {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Đặt Hàng</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tên Món Ăn</th>
+                    <th>Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Tổng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Phở</td>
+                    <td>50.000 VNĐ</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>50.000 VNĐ</td>
+                </tr>
+                <tr>
+                    <td>Bún Chả</td>
+                    <td>60.000 VNĐ</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>60.000 VNĐ</td>
+                </tr>
+                <!-- Thêm các món ăn khác ở đây -->
+            </tbody>
+        </table>
+        
+        <div class="total">Tổng Cộng: 110.000 VNĐ</div>
+        
+        <button type="button">Đặt Hàng</button>
+    </div>
+</body>
+</html>
